@@ -1,0 +1,55 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "m0ex01",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "m0ex01",
+                "resourceId": "/m0ex01"
+            },
+            "debuggerSettings": {
+                "targetConfigs/MSP430F5529.ccxml": {
+                    "TI MSP430 USB1/MSP430": {
+                        "data": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\" ?>\n<PropertyValues/>\n"
+                    }
+                }
+            }
+        },
+        {
+            "name": "m0ex03",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "m0ex03",
+                "resourceId": "/m0ex03"
+            }
+        },
+        {
+            "name": "m0ex04",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "m0ex04",
+                "resourceId": "/m0ex04"
+            },
+            "debuggerSettings": {
+                "targetConfigs/MSP430F5529.ccxml": {
+                    "TI MSP430 USB1/MSP430": {
+                        "data": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\" ?>\n<PropertyValues/>\n"
+                    }
+                }
+            }
+        },
+        {
+            "name": "m0ex05",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "m0ex05",
+                "resourceId": "/m0ex05"
+            }
+        }
+    ]
+}
