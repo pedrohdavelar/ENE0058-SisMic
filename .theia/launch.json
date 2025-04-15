@@ -50,6 +50,186 @@
                 "name": "m0ex05",
                 "resourceId": "/m0ex05"
             }
+        },
+        {
+            "name": "m0ex02",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "m0ex02",
+                "resourceId": "/m0ex02"
+            }
+        },
+        {
+            "name": "m1ex01",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "m1ex01",
+                "resourceId": "/m1ex01"
+            }
+        },
+        {
+            "name": "m1ex02",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "m1ex02",
+                "resourceId": "/m1ex02"
+            }
+        },
+        {
+            "name": "m1ex03",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "m1ex03",
+                "resourceId": "/m1ex03"
+            }
+        },
+        {
+            "name": "m1ex04",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "m1ex04",
+                "resourceId": "/m1ex04"
+            }
+        },
+        {
+            "name": "m1ex06",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "m1ex06",
+                "resourceId": "/m1ex06"
+            }
+        },
+        {
+            "name": "m1ex05",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "m1ex05",
+                "resourceId": "/m1ex05"
+            }
+        },
+        {
+            "name": "m1ex07",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "m1ex07",
+                "resourceId": "/m1ex07"
+            }
+        },
+        {
+            "name": "m1ex08",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "m1ex08",
+                "resourceId": "/m1ex08"
+            }
+        },
+        {
+            "name": "m1ex09",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "m1ex09",
+                "resourceId": "/m1ex09"
+            }
+        },
+        {
+            "name": "m1ex10",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "m1ex10",
+                "resourceId": "/m1ex10"
+            }
+        },
+        {
+            "name": "m1ex11",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "m1ex11",
+                "resourceId": "/m1ex11"
+            }
+        },
+        {
+            "name": "m1ex12",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "m1ex12",
+                "resourceId": "/m1ex12"
+            }
+        },
+        {
+            "name": "m1ex13",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "m1ex13",
+                "resourceId": "/m1ex13"
+            }
+        },
+        {
+            "name": "m1ex14",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "m1ex14",
+                "resourceId": "/m1ex14"
+            }
+        },
+        {
+            "name": "m1ex16",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "m1ex16",
+                "resourceId": "/m1ex16"
+            }
+        },
+        {
+            "name": "m1ex17",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "m1ex17",
+                "resourceId": "/m1ex17"
+            }
+        },
+        {
+            "name": "m1ex18",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "m1ex18",
+                "resourceId": "/m1ex18"
+            }
+        },
+        {
+            "name": "m1ex19",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "m1ex19",
+                "resourceId": "/m1ex19"
+            }
+        },
+        {
+            "name": "m1ex21",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "m1ex21",
+                "resourceId": "/m1ex21"
+            }
         }
     ]
 }
