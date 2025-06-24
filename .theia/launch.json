@@ -230,6 +230,202 @@
                 "name": "m1ex21",
                 "resourceId": "/m1ex21"
             }
+        },
+        {
+            "name": "m2e01",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "m2e01",
+                "resourceId": "/m2e01"
+            }
+        },
+        {
+            "name": "m2e02",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "m2e02",
+                "resourceId": "/m2e02"
+            }
+        },
+        {
+            "name": "m2e03",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "m2e03",
+                "resourceId": "/m2e03"
+            }
+        },
+        {
+            "name": "m2e05",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "m2e05",
+                "resourceId": "/m2e05"
+            }
+        },
+        {
+            "name": "m2e06",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "m2e06",
+                "resourceId": "/m2e06"
+            }
+        },
+        {
+            "name": "m2e08",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "m2e08",
+                "resourceId": "/m2e08"
+            }
+        },
+        {
+            "name": "m2e10",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "m2e10",
+                "resourceId": "/m2e10"
+            }
+        },
+        {
+            "name": "m2e12",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "m2e12",
+                "resourceId": "/m2e12"
+            }
+        },
+        {
+            "name": "m2e13",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "m2e13",
+                "resourceId": "/m2e13"
+            }
+        },
+        {
+            "name": "m2e99",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "m2e99",
+                "resourceId": "/m2e99"
+            },
+            "debuggerSettings": {
+                "targetConfigs/MSP430F5529.ccxml": {
+                    "TI MSP430 USB1/MSP430": {
+                        "data": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\" ?>\n<PropertyValues/>\n"
+                    }
+                }
+            }
+        },
+        {
+            "name": "m2p02",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "m2p02",
+                "resourceId": "/m2p02"
+            }
+        },
+        {
+            "name": "lcdTest",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "lcdTest",
+                "resourceId": "/lcdTest"
+            }
+        },
+        {
+            "name": "irTest",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "irTest",
+                "resourceId": "/irTest"
+            }
+        },
+        {
+            "name": "m3e02",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "m3e02",
+                "resourceId": "/m3e02"
+            }
+        },
+        {
+            "name": "m3e03",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "m3e03",
+                "resourceId": "/m3e03"
+            }
+        },
+        {
+            "name": "m3e06",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "m3e06",
+                "resourceId": "/m3e06"
+            }
+        },
+        {
+            "name": "m3e01",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "m3e01",
+                "resourceId": "/m3e01"
+            }
+        },
+        {
+            "name": "m3e09",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "m3e09",
+                "resourceId": "/m3e09"
+            }
+        },
+        {
+            "name": "m3e19",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "m3e19",
+                "resourceId": "/m3e19"
+            }
+        },
+        {
+            "name": "m3p03",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "m3p03",
+                "resourceId": "/m3p03"
+            }
+        },
+        {
+            "name": "m3e11",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "m3e11",
+                "resourceId": "/m3e11"
+            }
         }
     ]
 }
