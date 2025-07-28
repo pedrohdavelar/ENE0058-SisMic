@@ -1,10 +1,10 @@
 ******************************************************************************
                   MSP430 Linker PC v21.6.1                     
 ******************************************************************************
->> Linked Sun Jul 13 14:21:44 2025
+>> Linked Tue May  6 01:36:31 2025
 
-OUTPUT FILE NAME:   <irTest.out>
-ENTRY POINT SYMBOL: "_c_int00_noargs"  address: 00004b46
+OUTPUT FILE NAME:   <m2e10.out>
+ENTRY POINT SYMBOL: "_c_int00_noargs"  address: 00004588
 
 
 MEMORY CONFIGURATION
@@ -19,8 +19,8 @@ MEMORY CONFIGURATION
   INFOB                 00001900   00000080  00000000  00000080  RWIX
   INFOA                 00001980   00000080  00000000  00000080  RWIX
   USBRAM                00001c00   00000800  00000000  00000800  RWIX
-  RAM                   00002400   00002000  000000f7  00001f09  RWIX
-  FLASH                 00004400   0000bb80  0000091d  0000b263  RWIX
+  RAM                   00002400   00002000  000000a2  00001f5e  RWIX
+  FLASH                 00004400   0000bb80  000001ea  0000b996  RWIX
   INT00                 0000ff80   00000002  00000000  00000002  RWIX
   INT01                 0000ff82   00000002  00000000  00000002  RWIX
   INT02                 0000ff84   00000002  00000000  00000002  RWIX
@@ -93,72 +93,34 @@ SECTION ALLOCATION MAP
  output                                  attributes/
 section   page    origin      length       input sections
 --------  ----  ----------  ----------   ----------------
-.bss       0    00002400    00000052     UNINITIALIZED
-                  00002400    00000020     (.common:irPulseBits)
-                  00002420    00000008     (.common:irPulseBitsAddr)
-                  00002428    00000008     (.common:irPulseBitsAddrInv)
-                  00002430    00000008     (.common:irPulseBitsCmd)
-                  00002438    00000008     (.common:irPulseBitsCmdInv)
-                  00002440    00000004     (.common:irPulseBitsAddrHex)
-                  00002444    00000004     (.common:irPulseBitsAddrInvHex)
-                  00002448    00000004     (.common:irPulseBitsCmdHex)
-                  0000244c    00000004     (.common:irPulseBitsCmdInvHex)
-                  00002450    00000002     (.common:i)
-
-.data      0    00002452    00000005     UNINITIALIZED
-                  00002452    00000004     irTest.obj (.data)
-                  00002456    00000001     lcd_pcf8574_hd44780.obj (.data)
+.data      0    00002400    00000002     UNINITIALIZED
+                  00002400    00000002     m2ex10.obj (.data)
 
 .stack     0    00004360    000000a0     UNINITIALIZED
                   00004360    00000002     rts430x_sc_sd_eabi.lib : boot.c.obj (.stack)
                   00004362    0000009e     --HOLE--
 
-.text      0    00004400    0000082a     
-                  00004400    00000314     irTest.obj (.text:main)
-                  00004714    0000008e     lcd_pcf8574_hd44780.obj (.text:lcd_init)
-                  000047a2    00000086     irTest.obj (.text:TIMER1_A1_ISR)
-                  00004828    0000006e     rts430x_sc_sd_eabi.lib : copy_decompress_lzss.c.obj (.text:decompress:lzss:__TI_decompress_lzss)
-                  00004896    00000054     irTest.obj (.text:convertZUToHexFast)
-                  000048ea    00000052     rts430x_sc_sd_eabi.lib : autoinit.c.obj (.text:__TI_auto_init_nobinit_nopinit_hold_wdt:__TI_auto_init_nobinit_nopinit_hold_wdt)
-                  0000493c    00000050     irTest.obj (.text:init_onboard_peripherals)
-                  0000498c    00000044     irTest.obj (.text:Port2_ISR)
-                  000049d0    00000042     irTest.obj (.text:Port1_ISR)
-                  00004a12    00000042     lcd_pcf8574_hd44780.obj (.text:i2c_write_byte)
-                  00004a54    00000032     lcd_pcf8574_hd44780.obj (.text:lcd_send_command)
-                  00004a86    0000002e     lcd_pcf8574_hd44780.obj (.text:lcd_pulse_enable)
-                  00004ab4    0000002c     lcd_pcf8574_hd44780.obj (.text:i2c_init_msp430)
-                  00004ae0    00000026     lcd_pcf8574_hd44780.obj (.text:lcd_set_cursor)
-                  00004b06    00000022     rts430x_sc_sd_eabi.lib : memcmp.c.obj (.text:memcmp)
-                  00004b28    0000001e     irTest.obj (.text:init_ir_receiver)
-                  00004b46    0000001c     rts430x_sc_sd_eabi.lib : boot.c.obj (.text:_c_int00_noargs)
-                  00004b62    0000001c     lcd_pcf8574_hd44780.obj (.text:lcd_send_data)
-                  00004b7e    00000016     lcd_pcf8574_hd44780.obj (.text:lcd_write_pcf8574)
-                  00004b94    00000014     rts430x_sc_sd_eabi.lib : copy_zero_init.c.obj (.text:decompress:ZI:__TI_zero_init_nomemset:__TI_zero_init_nomemset)
-                  00004ba8    00000014     lcd_pcf8574_hd44780.obj (.text:lcd_backlight)
-                  00004bbc    00000014     lcd_pcf8574_hd44780.obj (.text:lcd_write_nibble)
-                  00004bd0    00000012     rts430x_sc_sd_eabi.lib : copy_decompress_none.c.obj (.text:decompress:none:__TI_decompress_none)
-                  00004be2    00000012     lcd_pcf8574_hd44780.obj (.text:lcd_print_string)
-                  00004bf4    00000012     rts430x_sc_sd_eabi.lib : memcpy.c.obj (.text:memcpy)
-                  00004c06    0000000a                            : lsl16.asm.obj (.text)
-                  00004c10    00000008     lcd_pcf8574_hd44780.obj (.text:lcd_clear)
-                  00004c18    00000006     rts430x_sc_sd_eabi.lib : exit.c.obj (.text:abort)
-                  00004c1e    00000006     lcd_pcf8574_hd44780.obj (.text:lcd_print_char)
-                  00004c24    00000004     rts430x_sc_sd_eabi.lib : pre_init.c.obj (.text:_system_pre_init)
-                  00004c28    00000002                            : startup.c.obj (.text:_system_post_cinit)
-
-.const     0    00004c2a    000000d1     
-                  00004c2a    000000c0     irTest.obj (.const:.string)
-                  00004cea    00000011     irTest.obj (.const:.string:hexTable)
+.text      0    00004400    000001d4     
+                  00004400    0000006e     rts430x_sc_sd_eabi.lib : copy_decompress_lzss.c.obj (.text:decompress:lzss:__TI_decompress_lzss)
+                  0000446e    00000060     m2ex10.obj (.text:main)
+                  000044ce    00000052     rts430x_sc_sd_eabi.lib : autoinit.c.obj (.text:__TI_auto_init_nobinit_nopinit_hold_wdt:__TI_auto_init_nobinit_nopinit_hold_wdt)
+                  00004520    00000034     m2ex10.obj (.text:Port1_ISR)
+                  00004554    00000034     m2ex10.obj (.text:Port2_ISR)
+                  00004588    0000001c     rts430x_sc_sd_eabi.lib : boot.c.obj (.text:_c_int00_noargs)
+                  000045a4    00000012                            : copy_decompress_none.c.obj (.text:decompress:none:__TI_decompress_none)
+                  000045b6    00000012                            : memcpy.c.obj (.text:memcpy)
+                  000045c8    00000006                            : exit.c.obj (.text:abort)
+                  000045ce    00000004                            : pre_init.c.obj (.text:_system_pre_init)
+                  000045d2    00000002                            : startup.c.obj (.text:_system_post_cinit)
 
 .text:_isr 
-*          0    00004cfc    00000008     
-                  00004cfc    00000008     rts430x_sc_sd_eabi.lib : isr_trap.asm.obj (.text:_isr:__TI_ISR_TRAP)
+*          0    000045d4    00000008     
+                  000045d4    00000008     rts430x_sc_sd_eabi.lib : isr_trap.asm.obj (.text:_isr:__TI_ISR_TRAP)
 
-.cinit     0    00004d04    0000001a     
-                  00004d04    00000008     (.cinit..data.load) [load image, compression = lzss]
-                  00004d0c    00000006     (__TI_handler_table)
-                  00004d12    00000004     (.cinit..bss.load) [load image, compression = zero_init]
-                  00004d16    00000008     (__TI_cinit_table)
+.cinit     0    000045dc    0000000e     
+                  000045dc    00000006     (.cinit..data.load) [load image]
+                  000045e2    00000004     (__TI_handler_table)
+                  000045e6    00000004     (__TI_cinit_table)
 
 .binit     0    00004400    00000000     
 
@@ -169,7 +131,7 @@ RTC        0    0000ffd2    00000002
                   0000ffd2    00000002     rts430x_sc_sd_eabi.lib : int41.asm.obj (.int41)
 
 PORT2      0    0000ffd4    00000002     
-                  0000ffd4    00000002     irTest.obj (.int42)
+                  0000ffd4    00000002     m2ex10.obj (.int42)
 
 TIMER2_A1 
 *          0    0000ffd6    00000002     
@@ -186,11 +148,11 @@ USCI_A1    0    0000ffdc    00000002
                   0000ffdc    00000002     rts430x_sc_sd_eabi.lib : int46.asm.obj (.int46)
 
 PORT1      0    0000ffde    00000002     
-                  0000ffde    00000002     irTest.obj (.int47)
+                  0000ffde    00000002     m2ex10.obj (.int47)
 
 TIMER1_A1 
 *          0    0000ffe0    00000002     
-                  0000ffe0    00000002     irTest.obj (.int48)
+                  0000ffe0    00000002     rts430x_sc_sd_eabi.lib : int48.asm.obj (.int48)
 
 TIMER1_A0 
 *          0    0000ffe2    00000002     
@@ -247,20 +209,16 @@ MODULE SUMMARY
        Module                       code   ro data   rw data
        ------                       ----   -------   -------
     .\
-       irTest.obj                   1250   215       86     
-       lcd_pcf8574_hd44780.obj      508    0         1      
+       m2ex10.obj                   200    4         2      
     +--+----------------------------+------+---------+---------+
-       Total:                       1758   215       87     
+       Total:                       200    4         2      
                                                             
     C:\ti\ccs2010\ccs\tools\compiler\ti-cgt-msp430_21.6.1.LTS\lib\rts430x_sc_sd_eabi.lib
        copy_decompress_lzss.c.obj   110    0         0      
        autoinit.c.obj               82     0         0      
-       memcmp.c.obj                 34     0         0      
        boot.c.obj                   28     2         0      
-       copy_zero_init.c.obj         20     0         0      
        copy_decompress_none.c.obj   18     0         0      
        memcpy.c.obj                 18     0         0      
-       lsl16.asm.obj                10     0         0      
        isr_trap.asm.obj             8      0         0      
        exit.c.obj                   6      0         0      
        pre_init.c.obj               4      0         0      
@@ -269,6 +227,7 @@ MODULE SUMMARY
        int44.asm.obj                0      2         0      
        int45.asm.obj                0      2         0      
        int46.asm.obj                0      2         0      
+       int48.asm.obj                0      2         0      
        int49.asm.obj                0      2         0      
        int50.asm.obj                0      2         0      
        int51.asm.obj                0      2         0      
@@ -285,27 +244,25 @@ MODULE SUMMARY
        int62.asm.obj                0      2         0      
        startup.c.obj                2      0         0      
     +--+----------------------------+------+---------+---------+
-       Total:                       340    40        0      
+       Total:                       276    42        0      
                                                             
        Stack:                       0      0         160    
-       Linker Generated:            0      26        0      
+       Linker Generated:            0      14        0      
     +--+----------------------------+------+---------+---------+
-       Grand Total:                 2098   281       247    
+       Grand Total:                 476    60        162    
 
 
 LINKER GENERATED COPY TABLES
 
-__TI_cinit_table @ 00004d16 records: 2, size/record: 4, table size: 8
-	.data: load addr=00004d04, load size=00000008 bytes, run addr=00002452, run size=00000005 bytes, compression=lzss
-	.bss: load addr=00004d12, load size=00000004 bytes, run addr=00002400, run size=00000052 bytes, compression=zero_init
+__TI_cinit_table @ 000045e6 records: 1, size/record: 4, table size: 4
+	.data: load addr=000045dc, load size=00000006 bytes, run addr=00002400, run size=00000002 bytes, compression=copy
 
 
 LINKER GENERATED HANDLER TABLE
 
-__TI_handler_table @ 00004d0c records: 3, size/record: 2, table size: 6
-	index: 0, handler: __TI_zero_init
-	index: 1, handler: __TI_decompress_lzss
-	index: 2, handler: __TI_decompress_none
+__TI_handler_table @ 000045e2 records: 2, size/record: 2, table size: 4
+	index: 0, handler: __TI_decompress_lzss
+	index: 1, handler: __TI_decompress_none
 
 
 GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
@@ -394,7 +351,7 @@ address   name
 00000732  ADC12MEM9                              
 00000733  ADC12MEM9_H                            
 00000732  ADC12MEM9_L                            
-00004c18  C$$EXIT                                
+000045c8  C$$EXIT                                
 000008c0  CBCTL0                                 
 000008c1  CBCTL0_H                               
 000008c0  CBCTL0_L                               
@@ -641,8 +598,8 @@ address   name
 0000012e  PMMRIE                                 
 0000012f  PMMRIE_H                               
 0000012e  PMMRIE_L                               
-000049d0  Port1_ISR                              
-0000498c  Port2_ISR                              
+00004520  Port1_ISR                              
+00004554  Port2_ISR                              
 00000158  RCCTL0                                 
 00000159  RCCTL0_H                               
 00000158  RCCTL0_L                               
@@ -807,7 +764,6 @@ address   name
 000003e0  TB0EX0                                 
 000003ee  TB0IV                                  
 000003d0  TB0R                                   
-000047a2  TIMER1_A1_ISR                          
 000005d0  UCA0ABCTL                              
 000005c6  UCA0BRW                                
 000005c7  UCA0BRW_H                              
@@ -1048,15 +1004,15 @@ address   name
 0000015c  WDTCTL_L                               
 00004400  __STACK_END                            
 000000a0  __STACK_SIZE                           
-00004d16  __TI_CINIT_Base                        
-00004d1e  __TI_CINIT_Limit                       
-00004d1e  __TI_CINIT_Warm                        
-00004d0c  __TI_Handler_Table_Base                
-00004d12  __TI_Handler_Table_Limit               
-00004cfc  __TI_ISR_TRAP                          
-000048ea  __TI_auto_init_nobinit_nopinit_hold_wdt
-00004828  __TI_decompress_lzss                   
-00004bd0  __TI_decompress_none                   
+000045e6  __TI_CINIT_Base                        
+000045ea  __TI_CINIT_Limit                       
+000045ea  __TI_CINIT_Warm                        
+000045e2  __TI_Handler_Table_Base                
+000045e6  __TI_Handler_Table_Limit               
+000045d4  __TI_ISR_TRAP                          
+000044ce  __TI_auto_init_nobinit_nopinit_hold_wdt
+00004400  __TI_decompress_lzss                   
+000045a4  __TI_decompress_none                   
 0000ffd2  __TI_int41                             
 0000ffd4  __TI_int42                             
 0000ffd6  __TI_int43                             
@@ -1082,42 +1038,16 @@ address   name
 ffffffff  __TI_pprof_out_hndl                    
 ffffffff  __TI_prof_data_size                    
 ffffffff  __TI_prof_data_start                   
-00004b94  __TI_zero_init_nomemset                
 ffffffff  __c_args__                             
-00004c06  __mspabi_slli                          
-00004b46  _c_int00_noargs                        
+00004588  _c_int00_noargs                        
 0000fffe  _reset_vector                          
 00004360  _stack                                 
-00004c28  _system_post_cinit                     
-00004c24  _system_pre_init                       
-00004c18  abort                                  
-00004896  convertZUToHexFast                     
-00004cea  hexTable                               
-00002450  i                                      
-00004b28  init_ir_receiver                       
-0000493c  init_onboard_peripherals               
-00002452  irBitCount                             
-00002400  irPulseBits                            
-00002420  irPulseBitsAddr                        
-00002440  irPulseBitsAddrHex                     
-00002428  irPulseBitsAddrInv                     
-00002444  irPulseBitsAddrInvHex                  
-00002430  irPulseBitsCmd                         
-00002448  irPulseBitsCmdHex                      
-00002438  irPulseBitsCmdInv                      
-0000244c  irPulseBitsCmdInvHex                   
-00004ba8  lcd_backlight                          
-00004c10  lcd_clear                              
-00004714  lcd_init                               
-00004c1e  lcd_print_char                         
-00004be2  lcd_print_string                       
-00004a54  lcd_send_command                       
-00004b62  lcd_send_data                          
-00004ae0  lcd_set_cursor                         
-00004400  main                                   
-00004b06  memcmp                                 
-00004bf4  memcpy                                 
-00002454  signalReady                            
+000045d2  _system_post_cinit                     
+000045ce  _system_pre_init                       
+000045c8  abort                                  
+00002400  dutyCycle                              
+0000446e  main                                   
+000045b6  memcpy                                 
 
 
 GLOBAL SYMBOLS: SORTED BY Symbol Address 
@@ -1855,54 +1785,27 @@ address   name
 000023fd  USBIEPBBAY_7                           
 000023fe  USBIEPBCTY_7                           
 000023ff  USBIEPSIZXY_7                          
-00002400  irPulseBits                            
-00002420  irPulseBitsAddr                        
-00002428  irPulseBitsAddrInv                     
-00002430  irPulseBitsCmd                         
-00002438  irPulseBitsCmdInv                      
-00002440  irPulseBitsAddrHex                     
-00002444  irPulseBitsAddrInvHex                  
-00002448  irPulseBitsCmdHex                      
-0000244c  irPulseBitsCmdInvHex                   
-00002450  i                                      
-00002452  irBitCount                             
-00002454  signalReady                            
+00002400  dutyCycle                              
 00004360  _stack                                 
 00004400  __STACK_END                            
-00004400  main                                   
-00004714  lcd_init                               
-000047a2  TIMER1_A1_ISR                          
-00004828  __TI_decompress_lzss                   
-00004896  convertZUToHexFast                     
-000048ea  __TI_auto_init_nobinit_nopinit_hold_wdt
-0000493c  init_onboard_peripherals               
-0000498c  Port2_ISR                              
-000049d0  Port1_ISR                              
-00004a54  lcd_send_command                       
-00004ae0  lcd_set_cursor                         
-00004b06  memcmp                                 
-00004b28  init_ir_receiver                       
-00004b46  _c_int00_noargs                        
-00004b62  lcd_send_data                          
-00004b94  __TI_zero_init_nomemset                
-00004ba8  lcd_backlight                          
-00004bd0  __TI_decompress_none                   
-00004be2  lcd_print_string                       
-00004bf4  memcpy                                 
-00004c06  __mspabi_slli                          
-00004c10  lcd_clear                              
-00004c18  C$$EXIT                                
-00004c18  abort                                  
-00004c1e  lcd_print_char                         
-00004c24  _system_pre_init                       
-00004c28  _system_post_cinit                     
-00004cea  hexTable                               
-00004cfc  __TI_ISR_TRAP                          
-00004d0c  __TI_Handler_Table_Base                
-00004d12  __TI_Handler_Table_Limit               
-00004d16  __TI_CINIT_Base                        
-00004d1e  __TI_CINIT_Limit                       
-00004d1e  __TI_CINIT_Warm                        
+00004400  __TI_decompress_lzss                   
+0000446e  main                                   
+000044ce  __TI_auto_init_nobinit_nopinit_hold_wdt
+00004520  Port1_ISR                              
+00004554  Port2_ISR                              
+00004588  _c_int00_noargs                        
+000045a4  __TI_decompress_none                   
+000045b6  memcpy                                 
+000045c8  C$$EXIT                                
+000045c8  abort                                  
+000045ce  _system_pre_init                       
+000045d2  _system_post_cinit                     
+000045d4  __TI_ISR_TRAP                          
+000045e2  __TI_Handler_Table_Base                
+000045e6  __TI_CINIT_Base                        
+000045e6  __TI_Handler_Table_Limit               
+000045ea  __TI_CINIT_Limit                       
+000045ea  __TI_CINIT_Warm                        
 0000ffd2  __TI_int41                             
 0000ffd4  __TI_int42                             
 0000ffd6  __TI_int43                             
@@ -1931,4 +1834,4 @@ ffffffff  __TI_prof_data_size
 ffffffff  __TI_prof_data_start                   
 ffffffff  __c_args__                             
 
-[806 symbols]
+[779 symbols]
